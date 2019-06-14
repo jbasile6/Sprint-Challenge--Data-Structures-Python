@@ -14,9 +14,14 @@ O(n) again, storage increases as capacity increases and get runs through the sto
 
 
 5. What is the runtime complexity of the provided code in `names.py`?
+O(n^2), the nested loops make it so each item in name1 is compared to each item in name2, exponentially grows as size of the inputs increase
 
 6. What is the space complexity of the provided code in `names.py`?
+O(n), just has to store the total of the two lists, does not grow exponentially as runtime does, also stores duplicates list
 
 7. What is the runtime complexity of your optimized code in `names.py`?
+O(n log n)
+creating bstName1 is O(n), using contains to create duplicates is O(log n)
 
 8. What is the space complexity of your optimized code in `names.py`?
+O(n), stores duplicates list and bstnames1 BST, is linear
