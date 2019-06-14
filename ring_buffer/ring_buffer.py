@@ -15,5 +15,6 @@ class RingBuffer:
 
   def get(self):
     store = self.storage
+    #filter out Nones
     answer = [x for x in store if x is not None]
     return answer
